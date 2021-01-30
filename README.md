@@ -9,10 +9,11 @@ We can have 2 qubits, and they have the Hadamard gate applied to them. There are
 this will be our introduction
 
 ## Our Motivation and Goals
-this will be our goals/motivations
+A great deal of our motivation to create this project arose from 1) a fundamental principle taught in The Coding School's QxQ course (sponsored by IBM Quantum) that quantum measurement is inherently probabilistic. Naturally we saw that applying this idea to a fundamental game such as Rock Paper Scissors would be the best way to put this idea to the test and see it in practical usage. The course's initial emphasis on quantum computing vs. classical computing also inspired us to put both quantum and classical implementations of the game head-to-head where we compare the results of classic computer algorithms for random number generation (0 = rock, 1 = paper, 2 = scissors) versus the randomness of various quantum algorithm outcomes.
+
 
 ## Project Elements and Usage
-this will be our project descirption and how to use it
+The project contains both a regular Python RPS program and a quantum gate-based RPS program.
 
 ## Demonstration
 this will be where we showcase a demonstration
