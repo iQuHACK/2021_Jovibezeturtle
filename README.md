@@ -1,4 +1,25 @@
-# Welcome to iQuHACK 2021!
+# Project Title Placeholder
+Joseph Oronto-Pratt, Victoria Outkin, Jayden Sansom, Oliver VandeWater
+
+## Abstract
+this will be our abstract
+
+## Introduction
+this will be our introduction
+
+## Our Motivation and Goals
+this will be our goals/motivations
+
+## Project Elements and Usage
+this will be our project descirption and how to use it
+
+## Demonstration
+this will be where we showcase a demonstration
+
+## Future Work
+this will be our future work area
+
+## This and the stuff below will be deleted after the project is completed!
 Check out some info in the [event's repository](https://github.com/iQuHACK/2021) to get started.
 
 Having a README in your team's repository facilitates judging. A good README contains:
