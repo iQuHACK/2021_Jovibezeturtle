@@ -2,6 +2,7 @@
 Joseph Oronto-Pratt, Victoria Outkin, Jayden Sansom, Oliver VandeWater
 
 ## Abstract
+Rock paper scissors? 
 this will be our abstract
 
 ## Introduction
