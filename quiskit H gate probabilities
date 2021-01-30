@@ -1,0 +1,17 @@
+from qiskit import*
+qr = QuantumRegister(3)
+cr = ClassicalRegister(3)
+circuit = QuantumCircuit(qr,cr)
+circuit.h(qr[0])
+circuit.h(qr[1])
+circuit.h(qr[0])
+
+circuit.h(qr[1])
+circuit.measure(2,2)
+simulator = Aer.get_backend('qasm_simulator')
+
+result = execute(circuit, backend=simulator, shots=100000).result()
+
+counts=result.get_counts()
+from qiskit.tools.visualization import plot_histogram
+plot_histogram(counts)
