@@ -28,6 +28,15 @@ A great deal of our motivation to create this project arose from a fundamental p
 ## Project Elements and Usage
 The project contains both a regular Python RPS program from Jupiter Notebooks and a quantum gate-based RPS program. Both can be standalone, but for the purposes of this project, we ran them against each other multiple times to draw conclusions about the different natures of the two. 
 
+The program can have different amount of shots, and amount and amount of times the quantum and the classical computers go against each other.  
+The user can enter the amount of times they want the computers to play rock paper scissors against each other. 
+
+To run the quantum computer, the user has to put in an API token, and enter the token in the code where it says, "API KEY!!!!!!!!".
+
+IBMQ.save_account('API KEY!!!!!!!!')
+
+After the computers have played against each other, you can play with the quantum computer.  Enter your choice choice of rock, paper, and scissors, and see who wins! 
+
 ## Demonstration
 We tested the output of a classical computer, vs the outputs of chosing quibit states. 
 
