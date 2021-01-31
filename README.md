@@ -34,18 +34,3 @@ We tested the output of a classical computer, vs the outputs of chosing quibit s
 ## Future Work
 Future work would include making the code's loop loop many times, and then save the values outputed in a string to make the program faster.  Future work would also include testing the Computer vs. Quantum on a quantum computer, and outputing many values at once.  The classical computer could be trying to beat the quantum computer, having a premade algorithm to try and guess what the quantum comptuter would output.  There are so many different possibilities to explore in the future!    
 
-## This and the stuff below will be deleted after the project is completed!
-Check out some info in the [event's repository](https://github.com/iQuHACK/2021) to get started.
-
-Having a README in your team's repository facilitates judging. A good README contains:
-* a clear title for your project,
-* a short abstract,
-* the motivation/goals for your project,
-* a description of the work you did, and
-* proposals for future work.
-
-You can find a potential README template in [one of last year's projects](https://github.com/iQuHACK/QuhacMan).
-
-Feel free to contact the staff with questions over our [event's slack](https://iquhack.slack.com), or via iquhack@mit.edu.
-
-Good luck!
