@@ -41,7 +41,7 @@ After the computers have played against each other, you can play with the quantu
 
 ## Demonstration
 We tested the output of a classical computer, vs the outputs of chosing quibit states. 
-![Demo!](Ignore/Test!.gif)
+![Demo!](ignore/test.gif)
 
 ## Future Work
 Future work would include making the code's loop loop many times, and then save the values outputed in a string to make the program faster.  Future work would also include testing the Computer vs. Quantum on a quantum computer, and outputing many values at once.  The classical computer could be trying to beat the quantum computer, having a premade algorithm to try and guess what the quantum comptuter would output.  There are so many different possibilities to explore in the future!    
