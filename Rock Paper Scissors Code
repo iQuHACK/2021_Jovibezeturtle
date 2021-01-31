@@ -1,0 +1,109 @@
+from qiskit import*
+circuit = QuantumCircuit(3, 3) 
+print(circuit)
+circuit.h(0)
+circuit.h(1)
+#circuit.h(2)
+print(circuit)
+print(circuit.measure(1,1))
+
+
+
+#circuit.measure(1,1)
+from random import randint
+
+i=0
+computer_count = 0
+quantum_count = 0
+tie = 0
+# Player strategy in integers: R P S = 0 1 2
+# R < P, 0 < 1
+# P < S, 1 < 2
+# S < R, 2 < 0
+
+player = -1
+
+while i < 1000:
+    player=-1
+    str = ""
+    circuit.measure(0,0)
+    simulator = Aer.get_backend('qasm_simulator')
+    result = execute(circuit, backend=simulator, shots=1).result()
+    counts = result.get_counts()
+    if(counts.get('010')) == 1:
+        i = i + 1
+        str = "Rock"
+        player = 0
+        #print(i)
+       # print(str)
+    if(counts.get('000')) == 1:
+        i = i + 1
+       # print(i)
+        str = "Paper"
+        player = 1
+        #print(str)
+    if(counts.get('011')) == 1:
+        i = i + 1
+       # print(i)
+        str = "Scissors"
+        player = 2
+       # print(str)
+       
+    if player != -1:
+    
+        t = ["Rock", "Paper", "Scissors"]
+
+        #computer's random play
+        computer = randint(0,2)
+        if player == computer:
+            #print("Tie!")
+            tie = tie+1
+            #break
+        elif player == 0:
+            if computer == 1: 
+                #"Paper":
+                #print("You lose!", computer, "covers", player)
+                computer_count = computer_count + 1
+                #break
+            else:
+                #print("You win!", player, "smashes", computer)
+                quantum_count = quantum_count + 1
+                #break
+        elif player == 1: 
+            #"Paper":
+            if computer == 2: #"Scissors":
+                #print("You lose!", computer, "cut", player)
+                computer_count = computer_count + 1
+                #break
+            else:
+                #print("You win!", player, "covers", computer)
+                quantum_count = quantum_count + 1
+               # break
+        elif player == 2: 
+            #"Scissors":
+            if computer == 0: 
+                #"Rock":
+                #print("You lose...", computer, "smashes", player)
+                computer_count = computer_count + 1
+               # break
+            else:
+                #print("You win!", player, "cut", computer)
+                quantum_count = quantum_count + 1
+               # break
+
+print( "Quantum Computer")
+print(quantum_count)
+print( "Classical Computer")
+print(computer_count)
+
+print("The amount of ties there have been:" )
+print(tie)
+
+if quantum_count>computer_count:
+    print("The quantum comptuer has won!")
+else:
+    print("The classical computer beats the quantum comptuter!")
+
+
+#from qiskit.tools.visualization import plot_histogram
+#plot_histogram(counts)
