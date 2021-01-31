@@ -31,14 +31,17 @@ The project contains both a regular Python RPS program from Jupiter Notebooks an
 The program can have different amount of shots, and amount and amount of times the quantum and the classical computers go against each other.  
 The user can enter the amount of times they want the computers to play rock paper scissors against each other. 
 
-To run the quantum computer, the user has to put in an API token, and enter the token in the code where it says, "API KEY!!!!!!!!".
+To run the quantum computer, the user has to put in an API token, and enter the token in the code between the quotation marks.
 
-IBMQ.save_account('API KEY!!!!!!!!')
+```python
+IBMQ.save_account('')
+```
 
 After the computers have played against each other, you can play with the quantum computer.  Enter your choice choice of rock, paper, and scissors, and see who wins! 
 
 ## Demonstration
 We tested the output of a classical computer, vs the outputs of chosing quibit states. 
+![](Test!.gif)
 
 ## Future Work
 Future work would include making the code's loop loop many times, and then save the values outputed in a string to make the program faster.  Future work would also include testing the Computer vs. Quantum on a quantum computer, and outputing many values at once.  The classical computer could be trying to beat the quantum computer, having a premade algorithm to try and guess what the quantum comptuter would output.  There are so many different possibilities to explore in the future!    
